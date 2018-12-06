@@ -1,0 +1,2 @@
+export const getFavorites = () => localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : [];
+export const setFavorites = (favorites = []) => localStorage.setItem('favorites', JSON.stringify(favorites));
